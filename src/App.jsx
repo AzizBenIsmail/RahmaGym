@@ -5,12 +5,14 @@ import Services from './components/Services'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import PWAInstall from './components/PWAInstall'
 import { ThemeProvider } from './components/ThemeContext'
 import './App.css'
 
 function App() {
   return (
     <ThemeProvider>
+      <PWAInstall />
       <Header />
       <Hero />
       <About />

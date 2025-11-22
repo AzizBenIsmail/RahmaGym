@@ -29,15 +29,27 @@ function Header() {
     const minutes = String(dateTime.getMinutes()).padStart(2, '0');
     const seconds = String(dateTime.getSeconds()).padStart(2, '0');
     
-    return `${day} ${date} ${month} - ${hours}:${minutes}:${seconds}`;
+    return {
+      dayMonth: `${day} ${date} ${month}`,
+      time: `${hours}:${minutes}:${seconds}`
+    };
   };
+
+  const { dayMonth, time } = formatDateTime();
 
   return (
     <header className="header">
       <div className="header-top">
         <div className="header-top-content">
-          <div className="datetime">
-            🕐 {formatDateTime()}
+          <div className="datetime-container">
+            <div className="datetime">
+              <span className="datetime-label">📅</span>
+              <span className="datetime-value">{dayMonth}</span>
+            </div>
+            <div className="time">
+              <span className="time-label">🕐</span>
+              <span className="time-value">{time}</span>
+            </div>
           </div>
           <button 
             className="theme-toggle" 
