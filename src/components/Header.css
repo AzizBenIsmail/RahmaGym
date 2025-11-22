@@ -143,6 +143,12 @@
   cursor: pointer;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (max-width: 1024px) {
   .nav {
     gap: 1.5rem;

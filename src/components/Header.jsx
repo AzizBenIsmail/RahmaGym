@@ -77,6 +77,13 @@ function Header() {
         </nav>
         <div className="header-actions">
           <LanguageSwitcher />
+          <button 
+            className="menu-toggle" 
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
         </div>
       </div>
     </header>

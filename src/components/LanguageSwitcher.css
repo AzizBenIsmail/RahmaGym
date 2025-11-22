@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 1001;
 }
 
 .language-btn {
@@ -18,25 +19,26 @@
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
+  white-space: nowrap;
 }
 
 .language-btn:hover {
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
 }
 
 .language-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: fixed;
+  top: auto;
+  left: auto;
   background: white;
-  border: 1px solid #ddd;
+  border: 2px solid #667eea;
   border-radius: 8px;
   overflow: hidden;
-  min-width: 160px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
-  margin-top: 0.5rem;
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 10001;
 }
 
 html.dark-mode .language-dropdown {
