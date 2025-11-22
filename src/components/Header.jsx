@@ -1,9 +1,11 @@
 import React from 'react';
 import './Header.css';
+import { useTheme } from './ThemeContext';
 
 function Header() {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const [dateTime, setDateTime] = React.useState(new Date());
+  const { isDark, toggleTheme } = useTheme();
 
   React.useEffect(() => {
     const timer = setInterval(() => {
@@ -33,8 +35,18 @@ function Header() {
   return (
     <header className="header">
       <div className="header-top">
-        <div className="datetime">
-          🕐 {formatDateTime()}
+        <div className="header-top-content">
+          <div className="datetime">
+            🕐 {formatDateTime()}
+          </div>
+          <button 
+            className="theme-toggle" 
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            title={isDark ? 'Mode clair' : 'Mode sombre'}
+          >
+            {isDark ? '☀️' : '🌙'}
+          </button>
         </div>
       </div>
       <div className="container">

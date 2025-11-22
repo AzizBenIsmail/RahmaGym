@@ -5,11 +5,12 @@ import Services from './components/Services'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { ThemeProvider } from './components/ThemeContext'
 import './App.css'
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Header />
       <Hero />
       <About />
@@ -17,7 +18,7 @@ function App() {
       <Pricing />
       <Contact />
       <Footer />
-    </>
+    </ThemeProvider>
   )
 }
 

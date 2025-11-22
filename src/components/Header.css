@@ -11,14 +11,42 @@
 .header-top {
   background: rgba(0, 0, 0, 0.1);
   padding: 0.6rem 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-size: 0.9rem;
   font-weight: 500;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.header-top-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .datetime {
   letter-spacing: 0.5px;
+}
+
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
 }
 
 .header .container {
@@ -74,6 +102,20 @@
     font-size: 0.85rem;
   }
 
+  .header-top-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .datetime {
+    font-size: 0.8rem;
+  }
+
+  .theme-toggle {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
   .header .container {
     padding: 0.8rem 0.8rem;
   }
@@ -122,8 +164,19 @@
     font-size: 0.75rem;
   }
 
+  .header-top-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .datetime {
     letter-spacing: 0;
+    font-size: 0.7rem;
+  }
+
+  .theme-toggle {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
   }
 
   .logo h1 {

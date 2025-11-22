@@ -12,6 +12,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Dark Mode */
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode,
+html.dark-mode body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+html.dark-mode {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #3a3a3a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+}
+
 * {
   margin: 0;
   padding: 0;

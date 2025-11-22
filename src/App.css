@@ -12,6 +12,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
   color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark-mode body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
 }
 
 #root {

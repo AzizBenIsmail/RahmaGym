@@ -1,0 +1,258 @@
+/* Dark Mode Styles */
+
+html.dark-mode {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #3a3a3a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --card-bg: #252525;
+}
+
+/* Hero Section */
+html.dark-mode .hero-content h2 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .hero-content > p {
+  color: #b0b0b0;
+}
+
+/* About Section */
+html.dark-mode .about {
+  background: #2d2d2d;
+}
+
+html.dark-mode .about .container h2 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .about .intro {
+  color: #b0b0b0;
+}
+
+html.dark-mode .about-card,
+html.dark-mode .qualifications-card,
+html.dark-mode .expertise-item {
+  background: #252525;
+  color: #e0e0e0;
+}
+
+html.dark-mode .about-card h3,
+html.dark-mode .qualifications-card h3,
+html.dark-mode .expertise-item h4 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .about-card p,
+html.dark-mode .expertise-item p {
+  color: #b0b0b0;
+}
+
+html.dark-mode .qualifications-card ul {
+  border-bottom-color: #404040;
+}
+
+html.dark-mode .qualifications-card li {
+  color: #b0b0b0;
+  border-bottom-color: #404040;
+}
+
+/* Services Section */
+html.dark-mode .services {
+  background: transparent;
+}
+
+html.dark-mode .services h2 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .services .intro {
+  color: #b0b0b0;
+}
+
+html.dark-mode .service-card {
+  background: #252525;
+  border-top-color: #667eea;
+  color: #e0e0e0;
+}
+
+html.dark-mode .service-card h3 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .service-desc {
+  color: #b0b0b0;
+}
+
+html.dark-mode .features-list li {
+  color: #b0b0b0;
+  border-bottom-color: #404040;
+}
+
+html.dark-mode .coaching-process {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+html.dark-mode .process-step p {
+  color: #e0e0e0;
+}
+
+html.dark-mode .special-mention {
+  background: #2d2d2d;
+  border-left-color: #667eea;
+}
+
+html.dark-mode .special-mention h3 {
+  color: #667eea;
+}
+
+html.dark-mode .special-mention li {
+  color: #b0b0b0;
+  border-bottom-color: #404040;
+}
+
+/* Pricing Section */
+html.dark-mode .pricing {
+  background: #2d2d2d;
+}
+
+html.dark-mode .pricing h2 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .pricing .intro {
+  color: #b0b0b0;
+}
+
+html.dark-mode .pricing-card {
+  background: #252525;
+  color: #e0e0e0;
+}
+
+html.dark-mode .pricing-card h3 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .pricing-card .description {
+  color: #b0b0b0;
+}
+
+html.dark-mode .pricing-card h4 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .features li {
+  color: #b0b0b0;
+}
+
+html.dark-mode .divider {
+  background: #404040;
+}
+
+html.dark-mode .pricing-info h3 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .info-item {
+  background: #252525;
+  color: #e0e0e0;
+}
+
+html.dark-mode .info-item h4 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .info-item p {
+  color: #b0b0b0;
+}
+
+/* Contact Section */
+html.dark-mode .contact h2 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .contact .intro {
+  color: #b0b0b0;
+}
+
+html.dark-mode .contact-info h3 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .contact-info > p {
+  color: #b0b0b0;
+}
+
+html.dark-mode .method {
+  background: #2d2d2d;
+  border-left-color: #667eea;
+}
+
+html.dark-mode .method h4 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .method p {
+  color: #b0b0b0;
+}
+
+html.dark-mode .availability {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+html.dark-mode .contact-form-wrapper {
+  background: #252525;
+}
+
+html.dark-mode .form-group label {
+  color: #e0e0e0;
+}
+
+html.dark-mode .form-group input,
+html.dark-mode .form-group select,
+html.dark-mode .form-group textarea {
+  background: #2d2d2d;
+  color: #e0e0e0;
+  border-color: #404040;
+}
+
+html.dark-mode .form-group input:focus,
+html.dark-mode .form-group select:focus,
+html.dark-mode .form-group textarea:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+html.dark-mode .form-group input::placeholder,
+html.dark-mode .form-group textarea::placeholder {
+  color: #808080;
+}
+
+/* Footer */
+html.dark-mode .footer {
+  background: #0f0f0f;
+  color: #b0b0b0;
+}
+
+html.dark-mode .footer-section h4 {
+  color: #e0e0e0;
+}
+
+html.dark-mode .footer-section ul li a {
+  color: #b0b0b0;
+}
+
+html.dark-mode .footer-section ul li a:hover {
+  color: #667eea;
+}
+
+html.dark-mode .footer-bottom {
+  border-top-color: #404040;
+  color: #808080;
+}
+
+html.dark-mode .footer-bottom p {
+  color: #808080;
+}
